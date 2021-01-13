@@ -1,5 +1,5 @@
 {
-  "name": "web-cli",
+  "name": "@web-study/cli",
   "version": "1.0.1",
   "description": "> TODO: description",
   "author": "zm569835014 <569835014@qq.com>",
@@ -27,5 +27,6 @@
     "root-check": "^1.0.0",
     "semver": "^7.3.4",
     "user-home": "^2.0.0"
-  }
+  },
+  "gitHead": "63fac8b80f5fe20cb95ac81cc5b23605c104f0be"
 }
