@@ -7,7 +7,7 @@
   "license": "ISC",
   "main": "lib/index.js",
   "bin": {
-    "web-cli": "bin/index.js"
+    "web-study-cli": "bin/index.js"
   },
   "directories": {
     "lib": "lib",
@@ -20,7 +20,13 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
+    "@web-study/get-npm-info": "file:../../utils/get-npm-info",
+    "@web-study/log": "file:../../utils/log",
+    "@web-study/init": "file:../../commands/init",
+    "@web-study/exec": "file:../exec",
     "colors": "^1.4.0",
+    "commander": "^6.2.1",
+    "dotenv": "^8.2.0",
     "import-local": "^3.0.2",
     "minimist": "^1.2.5",
     "path-exists": "^4.0.0",

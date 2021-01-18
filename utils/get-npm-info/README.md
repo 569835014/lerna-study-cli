@@ -1,11 +1,11 @@
-# `cli`
+# `get-npm-info`
 
 > TODO: description
 
 ## Usage
 
 ```
-const cli = require('@web-study/cli');
+const getNpmInfo = require('get-npm-info');
 
 // TODO: DEMONSTRATE API
 ```
