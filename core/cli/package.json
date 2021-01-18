@@ -1,6 +1,6 @@
 {
   "name": "@web-study/cli",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "> TODO: description",
   "author": "zm569835014 <569835014@qq.com>",
   "homepage": "",
@@ -20,10 +20,10 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@web-study/get-npm-info": "file:../../utils/get-npm-info",
-    "@web-study/log": "file:../../utils/log",
-    "@web-study/init": "file:../../commands/init",
     "@web-study/exec": "file:../exec",
+    "@web-study/get-npm-info": "file:../../utils/get-npm-info",
+    "@web-study/init": "file:../../commands/init",
+    "@web-study/log": "file:../../utils/log",
     "colors": "^1.4.0",
     "commander": "^6.2.1",
     "dotenv": "^8.2.0",
