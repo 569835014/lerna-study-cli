@@ -32,9 +32,7 @@
     "@web-study/utils": "file:../../utils/utils",
     "fs-extra": "^9.0.1",
     "npminstall": "^4.10.0",
-    "pkg-dir": "^5.0.0"
-  },
-  "devDependencies": {
+    "pkg-dir": "^5.0.0",
     "path-exists": "^4.0.0"
   }
 }
