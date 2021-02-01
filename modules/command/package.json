@@ -1,6 +1,6 @@
 {
   "name": "@web-study/command",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "description": "> TODO: description",
   "author": "zm569835014 <569835014@qq.com>",
   "homepage": "https://github.com/569835014/lerna-study-cli#readme",
@@ -27,8 +27,8 @@
     "url": "https://github.com/569835014/lerna-study-cli/issues"
   },
   "dependencies": {
+    "@web-study/log": "file:../../utils/log",
     "colors": "^1.4.0",
-    "semver": "^7.3.4",
-    "@web-study/log": "file:../../utils/log"
+    "semver": "^7.3.4"
   }
 }

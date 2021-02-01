@@ -1,6 +1,6 @@
 {
   "name": "@web-study/exec",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "description": "> TODO: description",
   "author": "zm569835014 <569835014@qq.com>",
   "homepage": "https://github.com/569835014/lerna-study-cli#readme",
@@ -15,8 +15,8 @@
   ],
   "dependencies": {
     "@web-study/log": "file:../../utils/log",
-    "@web-study/utils": "file:../../utils/utils",
-    "@web-study/package": "file:../../modules/package"
+    "@web-study/package": "file:../../modules/package",
+    "@web-study/utils": "file:../../utils/utils"
   },
   "publishConfig": {
     "access": "public"

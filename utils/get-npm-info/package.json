@@ -1,6 +1,6 @@
 {
   "name": "@web-study/get-npm-info",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "description": "> TODO: description",
   "author": "zm569835014 <569835014@qq.com>",
   "homepage": "https://github.com/569835014/lerna-study-cli#readme",
@@ -28,9 +28,9 @@
     "access": "public"
   },
   "dependencies": {
+    "@web-study/log": "file:../log",
     "axios": "^0.21.1",
     "semver": "^7.3.4",
-    "url-join": "^4.0.1",
-    "@web-study/log": "file:../log"
+    "url-join": "^4.0.1"
   }
 }
