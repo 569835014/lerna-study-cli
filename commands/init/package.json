@@ -25,5 +25,20 @@
   },
   "bugs": {
     "url": "https://github.com/569835014/lerna-study-cli/issues"
+  },
+  "dependencies": {
+    "@web-study/command": "file:../../modules/command",
+    "@web-study/get-npm-info": "file:../../utils/get-npm-info",
+    "@web-study/log": "file:../../utils/log",
+    "@web-study/package": "file:../../modules/package",
+    "@web-study/request": "file:../../utils/request",
+    "@web-study/utlis": "file:../../utils/utils",
+    "ejs": "^3.1.5",
+    "fs-extra": "^9.1.0",
+    "glob": "^7.1.6",
+    "inquirer": "^7.3.3",
+    "kebab-case": "^1.0.0",
+    "semver": "^7.3.4",
+    "user-home": "^2.0.0"
   }
 }

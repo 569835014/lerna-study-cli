@@ -2,9 +2,7 @@
 const pkg = require( '../package.json' )
 const log = require( '@web-study/log' )
 const exec = require( '@web-study/exec' )
-const { LOWEST_NODE_VERSION, DEFAULT_CLI_HOME } = require( './const' )
-const semver = require( 'semver' )
-const colors = require( 'colors/safe' )
+const { DEFAULT_CLI_HOME } = require( './const' )
 const rootCheck = require( 'root-check' )
 const pathExists = require( 'path-exists' ).sync
 const userHome = require( 'user-home' )
@@ -30,12 +28,6 @@ function checkPkgVersion () {
   log.notice( 'cli', pkg.version )
 }
 
-function checkNodeVersion () {
-  const nodeVersion = process.version;
-  if (!semver.gte( nodeVersion, LOWEST_NODE_VERSION )) {
-    throw new Error( colors.red( `需要安装v${ LOWEST_NODE_VERSION }版本的Node.js,当前${ colors.green( nodeVersion ) }` ) )
-  }
-}
 
 function checkRoot () {
   /**
@@ -62,13 +54,13 @@ function checkEnv () {
 }
 
 async function checkGlobalUpdate () {
-  const currentVersion = pkg.version;
-  const npmName = pkg.name;
-  const { getNpmSemverVersion } = require( '@web-study/get-npm-info' )
-  const lastVersion = await getNpmSemverVersion( currentVersion, npmName );
-  if (lastVersion && semver.gt( lastVersion, currentVersion )) {
-    log.warn( colors.yellow( `请手动更新${ npmName },当前版本:${ colors.red( `${ currentVersion }` ) },最新版本:${ colors.green( `${ lastVersion }` ) }` ) )
-  }
+  // const currentVersion = pkg.version;
+  // const npmName = pkg.name;
+  // const { getNpmSemverVersion } = require( '@web-study/get-npm-info' )
+  // const lastVersion = await getNpmSemverVersion( currentVersion, npmName );
+  // if (lastVersion && semver.gt( lastVersion, currentVersion )) {
+  //   log.warn( colors.yellow( `请手动更新${ npmName },当前版本:${ colors.red( `${ currentVersion }` ) },最新版本:${ colors.green( `${ lastVersion }` ) }` ) )
+  // }
 }
 
 function createDefaultConfig () {
@@ -86,7 +78,6 @@ function createDefaultConfig () {
 
 async function prepare () {
   checkPkgVersion();
-  checkNodeVersion();
   checkRoot();
   checkUserHome()
   checkEnv()
